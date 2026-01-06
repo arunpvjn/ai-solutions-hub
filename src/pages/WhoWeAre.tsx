@@ -9,8 +9,6 @@ import {
   Shield,
   Users,
   Lightbulb,
-  Globe,
-  Building2,
 } from "lucide-react";
 
 const WhoWeAre = () => {
@@ -41,20 +39,6 @@ const WhoWeAre = () => {
     },
   ];
 
-  const industries = [
-    "Healthcare",
-    "Financial Services",
-    "Retail & E-commerce",
-    "Manufacturing",
-    "Technology",
-    "Government",
-    "Education",
-    "Professional Services",
-    "Energy & Utilities",
-    "Transportation & Logistics",
-    "Media & Entertainment",
-    "Telecommunications",
-  ];
 
   const operatingModel = [
     {
@@ -88,9 +72,9 @@ const WhoWeAre = () => {
               AI-First. <span className="text-gradient">Human-Centric.</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl animate-fade-in-up">
-              We're a team of technologists, educators, and strategists united by a
-              belief that artificial intelligence should serve humanity's highest
-              aspirations.
+              We're a boutique consultancy founded on the belief that artificial 
+              intelligence should serve humanity's highest aspirations—delivered with 
+              personalized attention and deep expertise.
             </p>
           </div>
         </div>
@@ -152,23 +136,22 @@ const WhoWeAre = () => {
                 Founded on Experience, Driven by Purpose
               </h2>
               <p className="mt-6 text-lg text-muted-foreground">
-                Apex AI was founded by Dr. Sarah Chen, a former AI research lead at a
-                Fortune 100 tech company with over 15 years of experience building
-                intelligent systems at scale.
+                Aevum Solutions was founded by Arun, a technologist with deep experience 
+                in AI systems, security, and organizational transformation. After years 
+                of helping large organizations navigate digital change, he started this 
+                practice to bring enterprise-grade expertise to organizations of all sizes.
               </p>
               <p className="mt-4 text-muted-foreground">
-                After seeing too many AI initiatives fail due to lack of human
-                consideration—and too many succeed in ways that harmed rather than
-                helped—Sarah set out to build a different kind of AI company. One
-                where ethical considerations and business outcomes aren't in tension,
-                but reinforce each other.
+                The boutique model means you work directly with an expert—not junior 
+                consultants. Every engagement gets hands-on attention and solutions 
+                tailored to your specific context and goals.
               </p>
               <ul className="mt-8 space-y-3">
                 {[
-                  "PhD in Computer Science, Stanford University",
-                  "Former Director of AI Research, Fortune 100 Tech",
-                  "Author of 'Responsible AI at Scale'",
-                  "Advisory board member, AI Ethics Institute",
+                  "15+ years in AI and software development",
+                  "Security and threat modeling specialist",
+                  "Leadership coach and educator",
+                  "Track record across multiple industries",
                 ].map((item, index) => (
                   <li key={index} className="flex items-center gap-3 text-sm">
                     <CheckCircle className="h-4 w-4 text-primary" />
@@ -182,12 +165,12 @@ const WhoWeAre = () => {
                 <div className="flex h-full w-full items-center justify-center rounded-xl bg-card">
                   <div className="text-center p-8">
                     <div className="mx-auto h-32 w-32 rounded-full bg-accent flex items-center justify-center">
-                      <span className="text-4xl font-bold text-accent-foreground">SC</span>
+                      <span className="text-4xl font-bold text-accent-foreground">A</span>
                     </div>
                     <h3 className="mt-6 text-xl font-semibold text-card-foreground">
-                      Dr. Sarah Chen
+                      Arun
                     </h3>
-                    <p className="text-muted-foreground">Founder & CEO</p>
+                    <p className="text-muted-foreground">Founder</p>
                   </div>
                 </div>
               </div>
@@ -223,58 +206,6 @@ const WhoWeAre = () => {
         </div>
       </section>
 
-      {/* Industries */}
-      <section className="section-padding bg-secondary">
-        <div className="container-custom">
-          <SectionHeading
-            badge="Our Reach"
-            title="Industries We Serve"
-            description="Our team brings deep domain expertise across diverse sectors, enabling us to understand your specific challenges and opportunities."
-          />
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-            {industries.map((industry, index) => (
-              <div
-                key={index}
-                className="flex items-center gap-2 rounded-lg bg-card px-4 py-3 card-shadow"
-              >
-                <Building2 className="h-4 w-4 text-primary" />
-                <span className="text-sm font-medium text-card-foreground">
-                  {industry}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Global Presence */}
-      <section className="section-padding bg-background">
-        <div className="container-custom">
-          <div className="mx-auto max-w-3xl text-center">
-            <div className="mb-6 flex justify-center">
-              <Globe className="h-16 w-16 text-primary" />
-            </div>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              Global Reach, Local Understanding
-            </h2>
-            <p className="mt-6 text-lg text-muted-foreground">
-              With team members across North America, Europe, and Asia-Pacific, we
-              bring both global perspective and local market understanding to every
-              engagement. Our distributed model allows us to support clients
-              24/7 and deliver solutions that work across cultures and regulatory
-              environments.
-            </p>
-            <div className="mt-8">
-              <Link to="/contact">
-                <Button variant="hero" size="lg">
-                  Connect With Our Team
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA */}
       <CTASection

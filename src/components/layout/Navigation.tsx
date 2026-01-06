@@ -31,7 +31,7 @@ const Navigation = () => {
             <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
               <span className="text-lg font-bold text-primary-foreground">A</span>
             </div>
-            <span className="text-xl font-semibold text-foreground">Apex AI</span>
+            <span className="text-xl font-semibold text-foreground">Aevum Solutions</span>
           </Link>
 
           {/* Desktop Navigation */}

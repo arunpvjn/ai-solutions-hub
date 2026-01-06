@@ -3,8 +3,6 @@ import { Button } from "@/components/ui/button";
 import SectionHeading from "@/components/shared/SectionHeading";
 import {
   Mail,
-  Phone,
-  MapPin,
   Linkedin,
   Twitter,
   Calendar,
@@ -262,34 +260,11 @@ const Contact = () => {
                     <div>
                       <p className="font-medium text-card-foreground">Email</p>
                       <a
-                        href="mailto:hello@apexai.com"
+                        href="mailto:arun@aevumsolutions.xyz"
                         className="text-muted-foreground hover:text-primary"
                       >
-                        hello@apexai.com
+                        arun@aevumsolutions.xyz
                       </a>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <Phone className="mt-1 h-5 w-5 text-primary" />
-                    <div>
-                      <p className="font-medium text-card-foreground">Phone</p>
-                      <a
-                        href="tel:+1-555-123-4567"
-                        className="text-muted-foreground hover:text-primary"
-                      >
-                        +1 (555) 123-4567
-                      </a>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <MapPin className="mt-1 h-5 w-5 text-primary" />
-                    <div>
-                      <p className="font-medium text-card-foreground">Office</p>
-                      <p className="text-muted-foreground">
-                        123 Innovation Drive
-                        <br />
-                        San Francisco, CA 94105
-                      </p>
                     </div>
                   </div>
                 </div>
