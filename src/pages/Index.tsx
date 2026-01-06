@@ -43,10 +43,10 @@ const Index = () => {
   ];
 
   const proofPoints = [
-    { metric: "50+", label: "Enterprise Clients" },
-    { metric: "200+", label: "AI Systems Deployed" },
-    { metric: "98%", label: "Client Satisfaction" },
-    { metric: "15+", label: "Industries Served" },
+    { metric: "20+", label: "Projects Delivered" },
+    { metric: "50+", label: "AI Systems Built" },
+    { metric: "100%", label: "Client Retention" },
+    { metric: "8+", label: "Industries Served" },
   ];
 
   const processSteps = [
@@ -78,32 +78,32 @@ const Index = () => {
 
   const caseStudies = [
     {
-      company: "Fortune 500 Retailer",
+      company: "E-commerce Startup",
       industry: "Retail",
-      result: "40% reduction in customer service costs",
-      solution: "Deployed multi-agent system for order management and support",
+      result: "40% reduction in support tickets",
+      solution: "Deployed intelligent chatbot for customer inquiries",
     },
     {
-      company: "Regional Healthcare Network",
+      company: "Healthcare Clinic",
       industry: "Healthcare",
-      result: "60% faster clinical documentation",
-      solution: "AI-assisted medical transcription and workflow automation",
+      result: "60% faster documentation",
+      solution: "AI-assisted clinical transcription workflow",
     },
     {
-      company: "Global Financial Services",
+      company: "Fintech Company",
       industry: "Finance",
-      result: "85% improvement in threat detection",
-      solution: "ML-powered security monitoring and anomaly detection",
+      result: "3x faster fraud detection",
+      solution: "ML-powered anomaly detection system",
     },
   ];
 
   const testimonials = [
     {
       quote:
-        "Apex AI didn't just build us an AI solution—they transformed how our entire organization thinks about technology and its potential.",
+        "Aevum Solutions delivered exactly what we needed—a smart, practical AI solution that actually works for our team.",
       author: "Jennifer Morrison",
       role: "CTO",
-      company: "TechScale Industries",
+      company: "TechScale Startup",
     },
     {
       quote:
@@ -114,10 +114,10 @@ const Index = () => {
     },
     {
       quote:
-        "Their human-centric approach meant our employees embraced the changes rather than feared them. That's rare in this space.",
+        "Working with a boutique firm meant personalized attention and solutions tailored to our exact needs.",
       author: "Sarah Williams",
-      role: "Chief People Officer",
-      company: "Horizon Healthcare",
+      role: "Founder",
+      company: "Horizon Wellness",
     },
   ];
 

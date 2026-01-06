@@ -31,11 +31,11 @@ const Footer = () => {
               <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
                 <span className="text-lg font-bold text-primary-foreground">A</span>
               </div>
-              <span className="text-xl font-semibold text-foreground">Apex AI</span>
+              <span className="text-xl font-semibold text-foreground">Aevum Solutions</span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              AI-first, human-centric consulting and education. We help organizations
-              harness artificial intelligence responsibly and effectively.
+              AI-first, human-centric consulting and education. Personalized expertise 
+              for organizations ready to harness AI responsibly.
             </p>
             <div className="mt-6 flex space-x-4">
               <a
@@ -57,7 +57,7 @@ const Footer = () => {
                 <Twitter className="h-5 w-5" />
               </a>
               <a
-                href="mailto:hello@apexai.com"
+                href="mailto:arun@aevumsolutions.xyz"
                 className="text-muted-foreground transition-colors hover:text-primary"
                 aria-label="Email"
               >
@@ -130,7 +130,7 @@ const Footer = () => {
 
         <div className="mt-12 border-t border-border pt-8">
           <p className="text-center text-sm text-muted-foreground">
-            © {currentYear} Apex AI Consulting. All rights reserved.
+            © {currentYear} Aevum Solutions. All rights reserved.
           </p>
         </div>
       </div>
