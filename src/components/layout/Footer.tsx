@@ -1,0 +1,141 @@
+import { Link } from "react-router-dom";
+import { Linkedin, Twitter, Mail } from "lucide-react";
+
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  const footerLinks = {
+    solutions: [
+      { name: "Agentic AI Development", href: "/solutions/agentic-ai" },
+      { name: "Education & Workshops", href: "/solutions/education" },
+      { name: "Consulting", href: "/solutions/consulting" },
+      { name: "Threat Modeling", href: "/solutions/threat-modeling" },
+      { name: "Web Security Policy", href: "/solutions/web-security" },
+      { name: "Leadership Development", href: "/solutions/leadership" },
+      { name: "Career Coaching", href: "/solutions/career-coaching" },
+    ],
+    company: [
+      { name: "Who We Are", href: "/who-we-are" },
+      { name: "Resources", href: "/resources" },
+      { name: "Contact", href: "/contact" },
+    ],
+  };
+
+  return (
+    <footer className="border-t border-border bg-secondary">
+      <div className="container-custom section-padding">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+          {/* Brand */}
+          <div className="lg:col-span-1">
+            <Link to="/" className="flex items-center space-x-2">
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
+                <span className="text-lg font-bold text-primary-foreground">A</span>
+              </div>
+              <span className="text-xl font-semibold text-foreground">Apex AI</span>
+            </Link>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              AI-first, human-centric consulting and education. We help organizations
+              harness artificial intelligence responsibly and effectively.
+            </p>
+            <div className="mt-6 flex space-x-4">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground transition-colors hover:text-primary"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground transition-colors hover:text-primary"
+                aria-label="Twitter"
+              >
+                <Twitter className="h-5 w-5" />
+              </a>
+              <a
+                href="mailto:hello@apexai.com"
+                className="text-muted-foreground transition-colors hover:text-primary"
+                aria-label="Email"
+              >
+                <Mail className="h-5 w-5" />
+              </a>
+            </div>
+          </div>
+
+          {/* Solutions */}
+          <div>
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-foreground">
+              Solutions
+            </h3>
+            <ul className="space-y-3">
+              {footerLinks.solutions.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    to={link.href}
+                    className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Company */}
+          <div>
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-foreground">
+              Company
+            </h3>
+            <ul className="space-y-3">
+              {footerLinks.company.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    to={link.href}
+                    className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Newsletter */}
+          <div>
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-foreground">
+              Stay Updated
+            </h3>
+            <p className="mb-4 text-sm text-muted-foreground">
+              Get insights on AI strategy, security, and leadership delivered monthly.
+            </p>
+            <form className="space-y-3">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+              />
+              <button
+                type="submit"
+                className="w-full rounded-md bg-primary px-4 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary-dark"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div className="mt-12 border-t border-border pt-8">
+          <p className="text-center text-sm text-muted-foreground">
+            © {currentYear} Apex AI Consulting. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
