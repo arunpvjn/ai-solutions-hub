@@ -1,216 +1,255 @@
-import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import SectionHeading from "@/components/shared/SectionHeading";
 import CTASection from "@/components/shared/CTASection";
 import {
-  ArrowRight,
-  CheckCircle,
-  Heart,
-  Shield,
+  Target,
   Users,
+  Shield,
   Lightbulb,
+  Scale,
+  GraduationCap,
+  Award,
 } from "lucide-react";
 
 const WhoWeAre = () => {
-  const principles = [
+  const differentiators = [
     {
-      icon: Heart,
-      title: "Human-Centric",
+      title: "Operator-led, not slide-led",
       description:
-        "Every solution we build amplifies human capability. We design AI that empowers people, not replaces them.",
+        "Our guidance comes from direct experience building, running, and scaling enterprise platforms—not just advising on them.",
     },
     {
-      icon: Shield,
-      title: "Ethical by Design",
+      title: "Enterprise rigor with founder pragmatism",
       description:
-        "Responsible AI isn't an afterthought—it's embedded in our process from day one. Privacy, fairness, and transparency guide every decision.",
+        "We bring the discipline of large-scale operations with the speed and flexibility that growth-stage companies need.",
     },
     {
-      icon: Users,
-      title: "Service-Minded",
+      title: "Human-in-the-loop by design",
       description:
-        "Your mission becomes our mission. We're not just vendors—we're partners invested in your long-term success.",
-    },
-    {
-      icon: Lightbulb,
-      title: "Practical Innovation",
-      description:
-        "We balance cutting-edge capabilities with pragmatic implementation. Innovation should solve real problems, not create new ones.",
+        "Every system we design keeps human judgment at the center—augmenting decisions, never replacing accountability.",
     },
   ];
 
-
-  const operatingModel = [
+  const principles = [
     {
-      title: "Embedded Partnerships",
+      icon: Users,
+      title: "Augmentation Over Automation",
       description:
-        "We integrate with your teams, not just your systems. Our consultants work alongside your people, ensuring knowledge transfer and sustainable capability building.",
+        "We build systems that make people more capable, not redundant. Technology should amplify human expertise, not substitute for it.",
     },
     {
-      title: "Outcome-Focused Engagement",
+      icon: Target,
+      title: "Outcomes Before Technology",
       description:
-        "We structure our work around measurable outcomes, not billable hours. Your success metrics define our success.",
+        "The goal is never the tool—it's the result. We start with what you need to achieve and work backward to the right solution.",
     },
     {
-      title: "Scalable Delivery",
+      icon: Shield,
+      title: "Security, Trust, and Safety by Design",
       description:
-        "From proof-of-concept to enterprise rollout, our delivery model adapts to your pace and scale requirements.",
+        "Protection isn't a feature we add later. It's built into every layer of architecture, process, and decision-making.",
+    },
+    {
+      icon: Lightbulb,
+      title: "Clarity Beats Complexity",
+      description:
+        "Simple, well-understood systems outperform clever ones. We favor transparency and maintainability over sophistication.",
+    },
+    {
+      icon: Scale,
+      title: "Human Judgment Is Non-Negotiable",
+      description:
+        "AI informs decisions; humans make them. We design for accountability, not abdication.",
+    },
+    {
+      icon: GraduationCap,
+      title: "Teach, Don't Create Dependency",
+      description:
+        "Our goal is to make your team more capable, not more reliant on us. Knowledge transfer is built into every engagement.",
+    },
+    {
+      icon: Award,
+      title: "Earn Trust Through Substance",
+      description:
+        "No hype, no buzzwords. We demonstrate value through consistent delivery, honest communication, and measurable results.",
     },
   ];
 
   return (
     <>
-      {/* Hero */}
+      {/* Hero / Intro Section */}
       <section className="relative overflow-hidden bg-background">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-accent via-background to-background" />
-        <div className="container-custom relative py-20 lg:py-32">
-          <div className="mx-auto max-w-3xl text-center">
-            <span className="mb-6 inline-block rounded-full bg-accent px-4 py-1.5 text-sm font-medium text-accent-foreground animate-fade-in">
-              Who We Are
-            </span>
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl animate-fade-in-up">
-              AI-First. <span className="text-gradient">Human-Centric.</span>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-accent/30 via-background to-background" />
+        <div className="container-custom relative py-20 lg:py-28">
+          <div className="mx-auto max-w-4xl text-center">
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-foreground">
+              Human-centered AI. Practical security.{" "}
+              <span className="text-primary">Leaders who last.</span>
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl animate-fade-in-up">
-              We're a boutique consultancy founded on the belief that artificial 
-              intelligence should serve humanity's highest aspirations—delivered with 
-              personalized attention and deep expertise.
+            <p className="mx-auto mt-6 max-w-3xl text-xl text-muted-foreground sm:text-2xl font-medium">
+              A founder-led advisory and implementation practice focused on
+              agent-augmented customer success, security, and leadership systems.
+            </p>
+            <p className="mx-auto mt-8 max-w-2xl text-base text-muted-foreground leading-relaxed">
+              Led by a former Senior Director of Professional Services and Director
+              of Solutions Architecture at Akamai, with decades of experience
+              delivering and scaling enterprise security, performance, and
+              customer-facing platforms.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Mission */}
+      {/* Who We Are (Main Body) */}
       <section className="section-padding bg-secondary">
         <div className="container-custom">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-foreground">
+              Who We Are
+            </h2>
+            <div className="mt-8 space-y-6 text-lg text-muted-foreground leading-relaxed">
+              <p>
+                Aevum Solutions is a boutique, founder-led advisory and
+                implementation practice. We work with enterprise buyers, security
+                leaders, customer success executives, and experienced founders who
+                need more than frameworks—they need partners who've built and run
+                what they're trying to build.
+              </p>
+              <p>
+                Our founder brings direct leadership experience from Akamai, where
+                he served as Senior Director of Professional Services and Director
+                of Solutions Architecture. That background spans application
+                security, API protection, performance platforms, and large-scale
+                customer success organizations—all delivered at enterprise scale,
+                in production, with real accountability.
+              </p>
+              <p>
+                Today, we operate at the intersection of human judgment and agentic
+                AI. We help organizations design systems that augment their teams,
+                protect their customers, and deliver measurable outcomes—without
+                sacrificing the human expertise that makes those outcomes possible.
+              </p>
+              <p>
+                This isn't a solo consulting practice. It's a scalable, trusted
+                partner built to embed with your teams and deliver results that
+                last beyond any single engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Mission */}
+      <section className="section-padding bg-background">
+        <div className="container-custom">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-foreground">
               Our Mission
             </h2>
-            <p className="mt-6 text-xl leading-relaxed text-muted-foreground">
-              To democratize access to transformative AI capabilities while ensuring
-              these technologies are developed and deployed responsibly—creating a
-              future where artificial intelligence amplifies human potential across
-              every organization and community.
+            <p className="mt-8 text-xl leading-relaxed text-foreground font-medium">
+              "To help teams deliver better outcomes by combining human judgment,
+              ethical leadership, and practical AI—so work becomes more effective,
+              resilient, and humane."
+            </p>
+            <p className="mt-8 text-lg text-muted-foreground leading-relaxed">
+              We focus on augmentation, not replacement. Measurable outcomes, not
+              endless experimentation. Long-term sustainability, not short-term
+              fixes. Our work protects customers, data, trust, and the business
+              results that depend on all three.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Principles */}
-      <section className="section-padding bg-background">
-        <div className="container-custom">
-          <SectionHeading
-            badge="Our Values"
-            title="Principles That Guide Us"
-            description="These aren't just words on a wall. They're the decision-making framework we apply to every project, every day."
-          />
-          <div className="grid gap-8 md:grid-cols-2">
-            {principles.map((principle, index) => (
-              <div
-                key={index}
-                className="rounded-xl border border-border bg-card p-8 card-shadow"
-              >
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent text-accent-foreground">
-                  <principle.icon className="h-6 w-6" />
-                </div>
-                <h3 className="mb-3 text-xl font-semibold text-card-foreground">
-                  {principle.title}
-                </h3>
-                <p className="text-muted-foreground">{principle.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Founder Section */}
+      {/* What Makes Us Different */}
       <section className="section-padding bg-secondary">
         <div className="container-custom">
-          <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div className="order-2 lg:order-1">
-              <span className="mb-4 inline-block rounded-full bg-accent px-4 py-1.5 text-sm font-medium text-accent-foreground">
-                Leadership
-              </span>
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                Founded on Experience, Driven by Purpose
-              </h2>
-              <p className="mt-6 text-lg text-muted-foreground">
-                Aevum Solutions was founded by Arun, a technologist with deep experience 
-                in AI systems, security, and organizational transformation. After years 
-                of helping large organizations navigate digital change, he started this 
-                practice to bring enterprise-grade expertise to organizations of all sizes.
-              </p>
-              <p className="mt-4 text-muted-foreground">
-                The boutique model means you work directly with an expert—not junior 
-                consultants. Every engagement gets hands-on attention and solutions 
-                tailored to your specific context and goals.
-              </p>
-              <ul className="mt-8 space-y-3">
-                {[
-                  "15+ years in AI and software development",
-                  "Security and threat modeling specialist",
-                  "Leadership coach and educator",
-                  "Track record across multiple industries",
-                ].map((item, index) => (
-                  <li key={index} className="flex items-center gap-3 text-sm">
-                    <CheckCircle className="h-4 w-4 text-primary" />
-                    <span className="text-card-foreground">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="order-1 lg:order-2">
-              <div className="aspect-[4/5] rounded-2xl bg-gradient-primary p-1">
-                <div className="flex h-full w-full items-center justify-center rounded-xl bg-card">
-                  <div className="text-center p-8">
-                    <div className="mx-auto h-32 w-32 rounded-full bg-accent flex items-center justify-center">
-                      <span className="text-4xl font-bold text-accent-foreground">A</span>
-                    </div>
-                    <h3 className="mt-6 text-xl font-semibold text-card-foreground">
-                      Arun
-                    </h3>
-                    <p className="text-muted-foreground">Founder</p>
-                  </div>
+          <div className="mx-auto max-w-4xl">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-foreground text-center">
+              What Makes Us Different
+            </h2>
+            <div className="mt-12 grid gap-8 md:grid-cols-3">
+              {differentiators.map((item, index) => (
+                <div
+                  key={index}
+                  className="rounded-xl border border-border bg-card p-6"
+                >
+                  <h3 className="text-lg font-semibold text-card-foreground">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Operating Model */}
+      {/* Principles That Guide Us */}
       <section className="section-padding bg-background">
         <div className="container-custom">
-          <SectionHeading
-            badge="How We Work"
-            title="Our Operating Model"
-            description="We've designed our delivery approach around what actually creates lasting value for our clients."
-          />
-          <div className="grid gap-8 md:grid-cols-3">
-            {operatingModel.map((item, index) => (
-              <div
-                key={index}
-                className="rounded-xl border border-border bg-card p-8 card-shadow"
-              >
-                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground font-bold">
-                  {index + 1}
+          <div className="mx-auto max-w-4xl">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-foreground text-center">
+              Principles That Guide Us
+            </h2>
+            <div className="mt-12 grid gap-6 md:grid-cols-2">
+              {principles.map((principle, index) => (
+                <div
+                  key={index}
+                  className="rounded-xl border border-border bg-card p-6"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent text-accent-foreground">
+                      <principle.icon className="h-5 w-5" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-card-foreground">
+                        {principle.title}
+                      </h3>
+                      <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                        {principle.description}
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="mb-3 text-xl font-semibold text-card-foreground">
-                  {item.title}
-                </h3>
-                <p className="text-muted-foreground">{item.description}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
+      {/* Short Version / Summary Block */}
+      <section className="section-padding bg-primary/5 border-y border-border">
+        <div className="container-custom">
+          <div className="mx-auto max-w-3xl">
+            <div className="grid gap-8 md:grid-cols-2">
+              <div className="rounded-xl bg-card border border-border p-8">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-primary">
+                  Who We Are (Short)
+                </h3>
+                <p className="mt-4 text-lg text-card-foreground leading-relaxed">
+                  A founder-led practice bringing enterprise-scale experience to
+                  agent-augmented customer success, security, and leadership
+                  systems.
+                </p>
+              </div>
+              <div className="rounded-xl bg-card border border-border p-8">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-primary">
+                  Mission (Short)
+                </h3>
+                <p className="mt-4 text-lg text-card-foreground leading-relaxed">
+                  Human-centered AI. Practical security. Leaders who last.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* CTA */}
       <CTASection
-        title="Ready to Partner With Us?"
-        description="Let's explore how we can help your organization achieve its AI ambitions."
+        title="Ready to Work Together?"
+        description="Let's discuss how we can help your organization achieve its goals."
       />
     </>
   );
