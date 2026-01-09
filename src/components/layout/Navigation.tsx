@@ -95,15 +95,6 @@ const Navigation = () => {
               </div>
             </div>
 
-            <Link to="/resources">
-              <Button
-                variant="nav"
-                className={cn(isActive("/resources") && "text-primary")}
-              >
-                Resources
-              </Button>
-            </Link>
-
             <Link to="/contact">
               <Button
                 variant="nav"
@@ -172,14 +163,6 @@ const Navigation = () => {
                 </Link>
               ))}
             </div>
-
-            <Link
-              to="/resources"
-              className="block rounded-md px-4 py-2.5 text-foreground hover:bg-accent"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Resources
-            </Link>
 
             <Link
               to="/contact"

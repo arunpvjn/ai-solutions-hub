@@ -7,7 +7,7 @@ import Layout from "@/components/layout/Layout";
 import Index from "./pages/Index";
 import WhoWeAre from "./pages/WhoWeAre";
 import Solutions from "./pages/Solutions";
-import Resources from "./pages/Resources";
+
 import Contact from "./pages/Contact";
 import AgenticAI from "./pages/solutions/AgenticAI";
 import Education from "./pages/solutions/Education";
@@ -38,7 +38,7 @@ const App = () => (
             <Route path="/solutions/web-security" element={<WebSecurity />} />
             <Route path="/solutions/leadership" element={<Leadership />} />
             <Route path="/solutions/career-coaching" element={<CareerCoaching />} />
-            <Route path="/resources" element={<Resources />} />
+            
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
