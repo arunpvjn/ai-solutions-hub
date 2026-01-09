@@ -218,34 +218,6 @@ const WhoWeAre = () => {
         </div>
       </section>
 
-      {/* Short Version / Summary Block */}
-      <section className="section-padding bg-primary/5 border-y border-border">
-        <div className="container-custom">
-          <div className="mx-auto max-w-3xl">
-            <div className="grid gap-8 md:grid-cols-2">
-              <div className="rounded-xl bg-card border border-border p-8">
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-primary">
-                  Who We Are (Short)
-                </h3>
-                <p className="mt-4 text-lg text-card-foreground leading-relaxed">
-                  A founder-led practice bringing enterprise-scale experience to
-                  agent-augmented customer success, security, and leadership
-                  systems.
-                </p>
-              </div>
-              <div className="rounded-xl bg-card border border-border p-8">
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-primary">
-                  Mission (Short)
-                </h3>
-                <p className="mt-4 text-lg text-card-foreground leading-relaxed">
-                  Human-centered AI. Practical security. Leaders who last.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <CTASection
         title="Ready to Work Together?"

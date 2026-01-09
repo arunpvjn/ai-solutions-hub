@@ -246,14 +246,6 @@ const Index = () => {
               </div>
             ))}
           </div>
-          <div className="mt-12 text-center">
-            <Link to="/resources">
-              <Button variant="outline" size="lg">
-                View All Case Studies
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
-          </div>
         </div>
       </section>
 

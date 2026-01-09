@@ -16,7 +16,6 @@ const Footer = () => {
     ],
     company: [
       { name: "Who We Are", href: "/who-we-are" },
-      { name: "Resources", href: "/resources" },
       { name: "Contact", href: "/contact" },
     ],
   };
@@ -104,28 +103,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter */}
-          <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-foreground">
-              Stay Updated
-            </h3>
-            <p className="mb-4 text-sm text-muted-foreground">
-              Get insights on AI strategy, security, and leadership delivered monthly.
-            </p>
-            <form className="space-y-3">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full rounded-md border border-input bg-background px-4 py-2.5 text-sm placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-              />
-              <button
-                type="submit"
-                className="w-full rounded-md bg-primary px-4 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary-dark"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div>
         </div>
 
         <div className="mt-12 border-t border-border pt-8">
