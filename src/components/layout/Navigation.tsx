@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Logo from "@/components/shared/Logo";
 
 const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -16,12 +17,7 @@ const Navigation = () => {
       <div className="container-custom">
         <div className="flex h-16 items-center justify-between lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-              <span className="text-lg font-bold text-primary-foreground">A</span>
-            </div>
-            <span className="text-xl font-semibold text-foreground">Aevum Solutions</span>
-          </Link>
+          <Logo />
 
           {/* Desktop Navigation */}
           <div className="hidden items-center space-x-1 lg:flex">
