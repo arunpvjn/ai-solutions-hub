@@ -12,7 +12,7 @@ const Logo = ({ showText = true, className = "" }: LogoProps) => {
       <img 
         src={AevumLogo} 
         alt="Aevum Solutions logo" 
-        className="h-9 w-9 object-contain"
+        className="h-9 w-9 rounded-lg object-contain"
       />
       {showText && (
         <span className="text-xl font-semibold text-foreground">Aevum Solutions</span>
