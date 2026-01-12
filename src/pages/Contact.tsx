@@ -1,12 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import {
-  Mail,
-  Linkedin,
-  Twitter,
-  Calendar,
-  CheckCircle,
-} from "lucide-react";
+import { Mail, Linkedin, Twitter, Calendar, CheckCircle } from "lucide-react";
 
 const CALENDLY_URL = "https://calendly.com/contact-aevumsolutions/30min";
 
@@ -67,9 +61,7 @@ const Contact = () => {
     setSubmitted(true);
   };
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
-  ) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormState((prev) => ({
       ...prev,
       [e.target.name]: e.target.value,
@@ -90,8 +82,8 @@ const Contact = () => {
               Let's Start a <span className="text-gradient">Conversation</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl animate-fade-in-up">
-              Whether you have a specific project in mind or just want to explore
-              possibilities, we'd love to hear from you.
+              Whether you have a specific project in mind or just want to explore possibilities, we'd love to hear from
+              you.
             </p>
           </div>
         </div>
@@ -108,9 +100,7 @@ const Contact = () => {
                   <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-accent">
                     <CheckCircle className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="text-2xl font-semibold text-card-foreground">
-                    Message Sent!
-                  </h3>
+                  <h3 className="text-2xl font-semibold text-card-foreground">Message Sent!</h3>
                   <p className="mt-2 text-muted-foreground">
                     Thank you for reaching out. We'll get back to you within 24 hours.
                   </p>
@@ -134,16 +124,11 @@ const Contact = () => {
                 </div>
               ) : (
                 <>
-                  <h2 className="mb-6 text-2xl font-semibold text-card-foreground">
-                    Send us a message
-                  </h2>
+                  <h2 className="mb-6 text-2xl font-semibold text-card-foreground">Send us a message</h2>
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid gap-6 sm:grid-cols-2">
                       <div>
-                        <label
-                          htmlFor="name"
-                          className="mb-2 block text-sm font-medium text-card-foreground"
-                        >
+                        <label htmlFor="name" className="mb-2 block text-sm font-medium text-card-foreground">
                           Name *
                         </label>
                         <input
@@ -158,10 +143,7 @@ const Contact = () => {
                         />
                       </div>
                       <div>
-                        <label
-                          htmlFor="email"
-                          className="mb-2 block text-sm font-medium text-card-foreground"
-                        >
+                        <label htmlFor="email" className="mb-2 block text-sm font-medium text-card-foreground">
                           Email *
                         </label>
                         <input
@@ -178,10 +160,7 @@ const Contact = () => {
                     </div>
                     <div className="grid gap-6 sm:grid-cols-2">
                       <div>
-                        <label
-                          htmlFor="company"
-                          className="mb-2 block text-sm font-medium text-card-foreground"
-                        >
+                        <label htmlFor="company" className="mb-2 block text-sm font-medium text-card-foreground">
                           Company
                         </label>
                         <input
@@ -195,10 +174,7 @@ const Contact = () => {
                         />
                       </div>
                       <div>
-                        <label
-                          htmlFor="role"
-                          className="mb-2 block text-sm font-medium text-card-foreground"
-                        >
+                        <label htmlFor="role" className="mb-2 block text-sm font-medium text-card-foreground">
                           Role
                         </label>
                         <input
@@ -213,10 +189,7 @@ const Contact = () => {
                       </div>
                     </div>
                     <div>
-                      <label
-                        htmlFor="topic"
-                        className="mb-2 block text-sm font-medium text-card-foreground"
-                      >
+                      <label htmlFor="topic" className="mb-2 block text-sm font-medium text-card-foreground">
                         Topic *
                       </label>
                       <select
@@ -236,10 +209,7 @@ const Contact = () => {
                       </select>
                     </div>
                     <div>
-                      <label
-                        htmlFor="message"
-                        className="mb-2 block text-sm font-medium text-card-foreground"
-                      >
+                      <label htmlFor="message" className="mb-2 block text-sm font-medium text-card-foreground">
                         Message *
                       </label>
                       <textarea
@@ -268,35 +238,24 @@ const Contact = () => {
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent text-accent-foreground">
                   <Calendar className="h-6 w-6" />
                 </div>
-                <h3 className="mb-2 text-xl font-semibold text-card-foreground">
-                  Schedule a Consultation
-                </h3>
+                <h3 className="mb-2 text-xl font-semibold text-card-foreground">Schedule a Consultation</h3>
                 <p className="mb-6 text-muted-foreground">
                   Prefer to talk? Book a 30-minute discovery call with our team.
                 </p>
-                <Button
-                  variant="hero"
-                  className="w-full"
-                  onClick={handleCalendlyClick}
-                >
+                <Button variant="hero" className="w-full" onClick={handleCalendlyClick}>
                   Book a Time
                 </Button>
               </div>
 
               {/* Contact Details */}
               <div className="rounded-xl border border-border bg-card p-8 card-shadow">
-                <h3 className="mb-6 text-xl font-semibold text-card-foreground">
-                  Get in Touch
-                </h3>
+                <h3 className="mb-6 text-xl font-semibold text-card-foreground">Get in Touch</h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
                     <Mail className="mt-1 h-5 w-5 text-primary" />
                     <div>
                       <p className="font-medium text-card-foreground">Email</p>
-                      <a
-                        href="mailto:contact@aevumsolutions.xyz"
-                        className="text-muted-foreground hover:text-primary"
-                      >
+                      <a href="mailto:contact@aevumsolutions.xyz" className="text-muted-foreground hover:text-primary">
                         contact@aevumsolutions.xyz
                       </a>
                     </div>
@@ -306,12 +265,10 @@ const Contact = () => {
 
               {/* Social Links */}
               <div className="rounded-xl border border-border bg-card p-8 card-shadow">
-                <h3 className="mb-6 text-xl font-semibold text-card-foreground">
-                  Follow Us
-                </h3>
+                <h3 className="mb-6 text-xl font-semibold text-card-foreground">Follow Us</h3>
                 <div className="flex gap-4">
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/company/aevumsolutions/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex h-12 w-12 items-center justify-center rounded-lg bg-accent text-accent-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
