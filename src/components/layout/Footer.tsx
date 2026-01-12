@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Linkedin, Twitter, Mail } from "lucide-react";
+import Logo from "@/components/shared/Logo";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -23,12 +24,7 @@ const Footer = () => {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center space-x-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-                <span className="text-lg font-bold text-primary-foreground">A</span>
-              </div>
-              <span className="text-xl font-semibold text-foreground">Aevum Solutions</span>
-            </Link>
+            <Logo />
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               AI-first, human-centric consulting and implementation. Enterprise expertise 
               for organizations ready to harness AI responsibly.
