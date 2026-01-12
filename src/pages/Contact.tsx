@@ -1,6 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import SectionHeading from "@/components/shared/SectionHeading";
 import {
   Mail,
   Linkedin,
@@ -8,6 +7,8 @@ import {
   Calendar,
   CheckCircle,
 } from "lucide-react";
+
+const CALENDLY_URL = "https://calendly.com/contact-aevumsolutions/30min";
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -19,17 +20,46 @@ const Contact = () => {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [calendlyReady, setCalendlyReady] = useState(false);
 
   const topics = [
-    "Agentic AI Development",
-    "Education & Workshops",
-    "Consulting",
-    "Threat Modeling",
-    "Web Security Policy",
-    "Leadership Development",
-    "Career Coaching",
+    "Implementation Consulting",
+    "Leadership Coaching & Mentoring",
+    "Agent-Augmented Customer Success",
+    "Agent-Augmented Security",
     "General Inquiry",
   ];
+
+  useEffect(() => {
+    // Load Calendly CSS
+    if (!document.querySelector('link[href*="calendly"]')) {
+      const link = document.createElement("link");
+      link.href = "https://assets.calendly.com/assets/external/widget.css";
+      link.rel = "stylesheet";
+      document.head.appendChild(link);
+    }
+
+    // Load Calendly JS
+    if (!document.querySelector('script[src*="calendly"]')) {
+      const script = document.createElement("script");
+      script.src = "https://assets.calendly.com/assets/external/widget.js";
+      script.async = true;
+      script.onload = () => setCalendlyReady(true);
+      document.head.appendChild(script);
+    } else {
+      // Script already loaded
+      setCalendlyReady(true);
+    }
+  }, []);
+
+  const handleCalendlyClick = () => {
+    if (calendlyReady && window.Calendly) {
+      window.Calendly.initPopupWidget({ url: CALENDLY_URL });
+    } else {
+      // Fallback: open in new tab
+      window.open(CALENDLY_URL, "_blank");
+    }
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -244,7 +274,11 @@ const Contact = () => {
                 <p className="mb-6 text-muted-foreground">
                   Prefer to talk? Book a 30-minute discovery call with our team.
                 </p>
-                <Button variant="outline" className="w-full">
+                <Button
+                  variant="hero"
+                  className="w-full"
+                  onClick={handleCalendlyClick}
+                >
                   Book a Time
                 </Button>
               </div>
@@ -260,10 +294,10 @@ const Contact = () => {
                     <div>
                       <p className="font-medium text-card-foreground">Email</p>
                       <a
-                        href="mailto:arun@aevumsolutions.xyz"
+                        href="mailto:contact@aevumsolutions.xyz"
                         className="text-muted-foreground hover:text-primary"
                       >
-                        arun@aevumsolutions.xyz
+                        contact@aevumsolutions.xyz
                       </a>
                     </div>
                   </div>
@@ -298,30 +332,17 @@ const Contact = () => {
           </div>
         </div>
       </section>
-
-      {/* Newsletter */}
-      <section className="section-padding bg-background">
-        <div className="container-custom">
-          <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              Subscribe to Our Newsletter
-            </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Monthly insights on AI strategy, security, and leadership.
-            </p>
-            <form className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="rounded-lg border border-input bg-card px-6 py-3 text-sm placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary sm:w-80"
-              />
-              <Button variant="hero">Subscribe</Button>
-            </form>
-          </div>
-        </div>
-      </section>
     </>
   );
 };
+
+// Add type declaration for Calendly
+declare global {
+  interface Window {
+    Calendly?: {
+      initPopupWidget: (options: { url: string }) => void;
+    };
+  }
+}
 
 export default Contact;
