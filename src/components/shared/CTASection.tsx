@@ -11,7 +11,7 @@ interface CTASectionProps {
 
 const CTASection = ({
   title = "Ready to Transform Your Organization?",
-  description = "Let's discuss how AI can drive meaningful impact for your team and business.",
+  description = "Let's drive meaningful impact for your team and business.",
   buttonText = "Schedule a Conversation",
   buttonHref = "/contact",
 }: CTASectionProps) => {

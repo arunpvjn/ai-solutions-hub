@@ -17,7 +17,7 @@ const WhoWeAre = () => {
         "Our guidance comes from direct experience building, running, and scaling enterprise platforms—not just advising on them.",
     },
     {
-      title: "Enterprise rigor with founder pragmatism",
+      title: "Enterprise rigor, founder pragmatism",
       description:
         "We bring the discipline of large-scale operations with the speed and flexibility that growth-stage companies need.",
     },
@@ -88,11 +88,14 @@ const WhoWeAre = () => {
               A founder-led advisory and implementation practice focused on
               agent-augmented customer success, security, and leadership systems.
             </p>
-            <p className="mx-auto mt-8 max-w-2xl text-base text-muted-foreground leading-relaxed">
-              Led by a former Senior Director of Professional Services and Director
-              of Solutions Architecture at Akamai, with decades of experience
-              delivering and scaling enterprise security, performance, and
-              customer-facing platforms.
+            <p className="mx-auto mt-8 max-w-3xl text-base text-muted-foreground leading-relaxed">
+              With over 20 years of experience leading Solutions Architecture, Professional Services, 
+              Security Consulting, and Customer Success functions, our practice brings deep expertise 
+              in cloud services and cybersecurity. We've partnered with executives, founders, and 
+              business leaders from startups through Fortune 100 companies—including experience at 
+              Akamai, Fidelity Investments, and Infosys. Our work spans mentoring and career coaching, 
+              leadership development, and designing agentic AI-augmented workflows that deliver 
+              measurable enterprise outcomes.
             </p>
           </div>
         </div>
@@ -114,12 +117,10 @@ const WhoWeAre = () => {
                 what they're trying to build.
               </p>
               <p>
-                Our founder brings direct leadership experience from Akamai, where
-                he served as Senior Director of Professional Services and Director
-                of Solutions Architecture. That background spans application
-                security, API protection, performance platforms, and large-scale
-                customer success organizations—all delivered at enterprise scale,
-                in production, with real accountability.
+                Our foundation is real-world, production-grade experience across 
+                application security, API protection, performance platforms, and 
+                large-scale customer success organizations—all delivered at 
+                enterprise scale, with real accountability.
               </p>
               <p>
                 Today, we operate at the intersection of human judgment and agentic
@@ -221,7 +222,7 @@ const WhoWeAre = () => {
       {/* CTA */}
       <CTASection
         title="Ready to Work Together?"
-        description="Let's discuss how we can help your organization achieve its goals."
+        description="Let's drive meaningful impact for your team and business."
       />
     </>
   );

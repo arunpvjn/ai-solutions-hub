@@ -6,13 +6,10 @@ const Footer = () => {
 
   const footerLinks = {
     solutions: [
-      { name: "Agentic AI Development", href: "/solutions/agentic-ai" },
-      { name: "Education & Workshops", href: "/solutions/education" },
-      { name: "Consulting", href: "/solutions/consulting" },
-      { name: "Threat Modeling", href: "/solutions/threat-modeling" },
-      { name: "Web Security Policy", href: "/solutions/web-security" },
-      { name: "Leadership Development", href: "/solutions/leadership" },
-      { name: "Career Coaching", href: "/solutions/career-coaching" },
+      { name: "Implementation Consulting", href: "/solutions" },
+      { name: "Leadership Coaching & Mentoring", href: "/solutions" },
+      { name: "Agent-Augmented Customer Success", href: "/solutions" },
+      { name: "Agent-Augmented Security", href: "/solutions" },
     ],
     company: [
       { name: "Who We Are", href: "/who-we-are" },
@@ -33,7 +30,7 @@ const Footer = () => {
               <span className="text-xl font-semibold text-foreground">Aevum Solutions</span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              AI-first, human-centric consulting and education. Personalized expertise 
+              AI-first, human-centric consulting and implementation. Enterprise expertise 
               for organizations ready to harness AI responsibly.
             </p>
             <div className="mt-6 flex space-x-4">
@@ -56,7 +53,7 @@ const Footer = () => {
                 <Twitter className="h-5 w-5" />
               </a>
               <a
-                href="mailto:arun@aevumsolutions.xyz"
+                href="mailto:contact@aevumsolutions.xyz"
                 className="text-muted-foreground transition-colors hover:text-primary"
                 aria-label="Email"
               >
@@ -71,8 +68,8 @@ const Footer = () => {
               Solutions
             </h3>
             <ul className="space-y-3">
-              {footerLinks.solutions.map((link) => (
-                <li key={link.href}>
+              {footerLinks.solutions.map((link, index) => (
+                <li key={index}>
                   <Link
                     to={link.href}
                     className="text-sm text-muted-foreground transition-colors hover:text-primary"

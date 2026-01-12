@@ -1,22 +1,11 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-
-const solutionsDropdown = [
-  { name: "Agentic AI Development", href: "/solutions/agentic-ai" },
-  { name: "Education & Workshops", href: "/solutions/education" },
-  { name: "Consulting", href: "/solutions/consulting" },
-  { name: "Threat Modeling", href: "/solutions/threat-modeling" },
-  { name: "Web Security Policy", href: "/solutions/web-security" },
-  { name: "Leadership Development", href: "/solutions/leadership" },
-  { name: "Career Coaching", href: "/solutions/career-coaching" },
-];
 
 const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [solutionsOpen, setSolutionsOpen] = useState(false);
   const location = useLocation();
 
   const isActive = (path: string) => location.pathname === path;
@@ -45,55 +34,14 @@ const Navigation = () => {
               </Button>
             </Link>
 
-            {/* Solutions Dropdown */}
-            <div
-              className="relative"
-              onMouseEnter={() => setSolutionsOpen(true)}
-              onMouseLeave={() => setSolutionsOpen(false)}
-            >
-              <Link to="/solutions">
-                <Button
-                  variant="nav"
-                  className={cn(
-                    "flex items-center gap-1",
-                    isSolutionsActive && "text-primary"
-                  )}
-                >
-                  Solutions
-                  <ChevronDown
-                    className={cn(
-                      "h-4 w-4 transition-transform duration-200",
-                      solutionsOpen && "rotate-180"
-                    )}
-                  />
-                </Button>
-              </Link>
-
-              {/* Dropdown Menu */}
-              <div
-                className={cn(
-                  "absolute left-0 top-full z-50 w-64 rounded-lg border border-border bg-popover p-2 shadow-lg transition-all duration-200",
-                  solutionsOpen
-                    ? "visible translate-y-0 opacity-100"
-                    : "invisible -translate-y-2 opacity-0"
-                )}
+            <Link to="/solutions">
+              <Button
+                variant="nav"
+                className={cn(isSolutionsActive && "text-primary")}
               >
-                {solutionsDropdown.map((item) => (
-                  <Link
-                    key={item.href}
-                    to={item.href}
-                    className={cn(
-                      "block rounded-md px-4 py-2.5 text-sm transition-colors hover:bg-accent hover:text-accent-foreground",
-                      isActive(item.href)
-                        ? "bg-accent text-accent-foreground"
-                        : "text-popover-foreground"
-                    )}
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-              </div>
-            </div>
+                Solutions
+              </Button>
+            </Link>
 
             <Link to="/contact">
               <Button
@@ -132,7 +80,7 @@ const Navigation = () => {
         <div
           className={cn(
             "overflow-hidden transition-all duration-300 lg:hidden",
-            mobileMenuOpen ? "max-h-[500px] pb-6" : "max-h-0"
+            mobileMenuOpen ? "max-h-[300px] pb-6" : "max-h-0"
           )}
         >
           <div className="space-y-1 pt-4">
@@ -144,25 +92,13 @@ const Navigation = () => {
               Who We Are
             </Link>
 
-            <div className="space-y-1">
-              <Link
-                to="/solutions"
-                className="block rounded-md px-4 py-2.5 font-medium text-foreground hover:bg-accent"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Solutions
-              </Link>
-              {solutionsDropdown.map((item) => (
-                <Link
-                  key={item.href}
-                  to={item.href}
-                  className="block rounded-md px-8 py-2 text-sm text-muted-foreground hover:bg-accent hover:text-foreground"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
+            <Link
+              to="/solutions"
+              className="block rounded-md px-4 py-2.5 font-medium text-foreground hover:bg-accent"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Solutions
+            </Link>
 
             <Link
               to="/contact"
