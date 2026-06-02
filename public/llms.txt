@@ -1,0 +1,16 @@
+# Aevum Solutions
+
+> Independent advisory for B2B post-sales leaders. AI-augmented operating models, agent workflows, and escalation logic — implementation through renewal. Designed by an operator who's run them at enterprise scale.
+
+Aevum Solutions helps engineering-led B2B SaaS founders and growth-stage post-sales leaders design and implement AI-augmented post-sales operating models. The work spans implementation, customer success, renewals, and escalation logic — without scaling headcount linearly. Led by a senior operator who has run technical post-sales functions at enterprise scale.
+
+## Pages
+
+- [Home](/): Overview of AI-augmented post-sales advisory, three engagement models, and fit criteria.
+- [Who We Are](/who-we-are): Founder background, operator-led philosophy, and what an engagement looks like.
+- [Solutions](/solutions): Detailed view of the three offerings — Post-Sales AI Readiness Diagnostic, Post-Sales Operating Model Blueprint, and Embedded Post-Sales Advisor.
+- [Contact](/contact): Calendly booking, email, and LinkedIn for starting a conversation.
+
+## External
+
+- [Writing](https://arunvijayan.substack.com/): Substack newsletter on AI-augmented post-sales operating models, agent design, and post-sales leadership.
