@@ -10,13 +10,13 @@ interface CTASectionProps {
 }
 
 const CTASection = ({
-  title = "Ready to Transform Your Organization?",
-  description = "Let's drive meaningful impact for your team and business.",
-  buttonText = "Schedule a Conversation",
+  title = "Ready to talk?",
+  description = "Let's see if there's a fit.",
+  buttonText = "Book a 30-min intro",
   buttonHref = "/contact",
 }: CTASectionProps) => {
   return (
-    <section className="section-padding bg-gradient-primary">
+    <section className="section-padding bg-primary">
       <div className="container-custom text-center">
         <h2 className="text-3xl font-bold tracking-tight text-primary-foreground sm:text-4xl">
           {title}

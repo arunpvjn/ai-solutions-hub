@@ -1,228 +1,52 @@
 import CTASection from "@/components/shared/CTASection";
-import {
-  Target,
-  Users,
-  Shield,
-  Lightbulb,
-  Scale,
-  GraduationCap,
-  Award,
-} from "lucide-react";
 
 const WhoWeAre = () => {
-  const differentiators = [
-    {
-      title: "Operator-led, not slide-led",
-      description:
-        "Our guidance comes from direct experience building, running, and scaling enterprise platforms—not just advising on them.",
-    },
-    {
-      title: "Enterprise rigor, founder pragmatism",
-      description:
-        "We bring the discipline of large-scale operations with the speed and flexibility that growth-stage companies need.",
-    },
-    {
-      title: "Human-in-the-loop by design",
-      description:
-        "Every system we design keeps human judgment at the center—augmenting decisions, never replacing accountability.",
-    },
-  ];
-
-  const principles = [
-    {
-      icon: Users,
-      title: "Augmentation Over Automation",
-      description:
-        "We build systems that make people more capable, not redundant. Technology should amplify human expertise, not substitute for it.",
-    },
-    {
-      icon: Target,
-      title: "Outcomes Before Technology",
-      description:
-        "The goal is never the tool—it's the result. We start with what you need to achieve and work backward to the right solution.",
-    },
-    {
-      icon: Shield,
-      title: "Security, Trust, and Safety by Design",
-      description:
-        "Protection isn't a feature we add later. It's built into every layer of architecture, process, and decision-making.",
-    },
-    {
-      icon: Lightbulb,
-      title: "Clarity Beats Complexity",
-      description:
-        "Simple, well-understood systems outperform clever ones. We favor transparency and maintainability over sophistication.",
-    },
-    {
-      icon: Scale,
-      title: "Human Judgment Is Non-Negotiable",
-      description:
-        "AI informs decisions; humans make them. We design for accountability, not abdication.",
-    },
-    {
-      icon: GraduationCap,
-      title: "Teach, Don't Create Dependency",
-      description:
-        "Our goal is to make your team more capable, not more reliant on us. Knowledge transfer is built into every engagement.",
-    },
-    {
-      icon: Award,
-      title: "Earn Trust Through Substance",
-      description:
-        "No hype, no buzzwords. We demonstrate value through consistent delivery, honest communication, and measurable results.",
-    },
-  ];
-
   return (
     <>
-      {/* Hero / Intro Section */}
-      <section className="relative overflow-hidden bg-background">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-accent/30 via-background to-background" />
-        <div className="container-custom relative py-20 lg:py-28">
+      {/* Hero */}
+      <section className="bg-background">
+        <div className="container-custom py-20 lg:py-28">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-foreground">
-              Human-centered AI. Practical security.{" "}
-              <span className="text-primary">Leaders who last.</span>
+            <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
+              About Aevum Solutions
             </h1>
-            <p className="mx-auto mt-6 max-w-3xl text-xl text-muted-foreground sm:text-2xl font-medium">
-              A founder-led advisory and implementation practice focused on
-              agent-augmented customer success, security, and leadership systems.
-            </p>
-            <p className="mx-auto mt-8 max-w-3xl text-base text-muted-foreground leading-relaxed">
-              With over 20 years of experience leading Solutions Architecture, Professional Services, 
-              Security Consulting, and Customer Success functions, our practice brings deep expertise 
-              in cloud services and cybersecurity. We've partnered with executives, founders, and 
-              business leaders from startups through Fortune 100 companies—including experience at 
-              Akamai, Fidelity Investments, and Infosys. Our work spans mentoring and career coaching, 
-              leadership development, and designing agentic AI-augmented workflows that deliver 
-              measurable enterprise outcomes.
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
+              Independent advisory for AI-augmented post-sales. Founder-led, Austin, TX.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Who We Are (Main Body) */}
-      <section className="section-padding bg-secondary">
-        <div className="container-custom">
-          <div className="mx-auto max-w-3xl">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-foreground">
-              Who We Are
-            </h2>
-            <div className="mt-8 space-y-6 text-lg text-muted-foreground leading-relaxed">
-              <p>
-                Aevum Solutions is a boutique, founder-led advisory and
-                implementation practice. We work with enterprise buyers, security
-                leaders, customer success executives, and experienced founders who
-                need more than frameworks—they need partners who've built and run
-                what they're trying to build.
-              </p>
-              <p>
-                Our foundation is real-world, production-grade experience across 
-                application security, API protection, performance platforms, and 
-                large-scale customer success organizations—all delivered at 
-                enterprise scale, with real accountability.
-              </p>
-              <p>
-                Today, we operate at the intersection of human judgment and agentic
-                AI. We help organizations design systems that augment their teams,
-                protect their customers, and deliver measurable outcomes—without
-                sacrificing the human expertise that makes those outcomes possible.
-              </p>
-              <p>
-                This isn't a solo consulting practice. It's a scalable, trusted
-                partner built to embed with your teams and deliver results that
-                last beyond any single engagement.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Mission */}
+      {/* Body */}
       <section className="section-padding bg-background">
         <div className="container-custom">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-foreground">
-              Our Mission
-            </h2>
-            <p className="mt-8 text-xl leading-relaxed text-foreground font-medium">
-              "To help teams deliver better outcomes by combining human judgment,
-              ethical leadership, and practical AI—so work becomes more effective,
-              resilient, and humane."
+          <div className="mx-auto max-w-[680px] space-y-6 text-lg leading-relaxed text-muted-foreground">
+            <p>
+              Aevum Solutions is an independent advisory practice led by Arun Vijayan and based in Austin, Texas. The focus is narrow on purpose: AI-augmented post-sales operating models for B2B technology companies — implementation through renewal.
             </p>
-            <p className="mt-8 text-lg text-muted-foreground leading-relaxed">
-              We focus on augmentation, not replacement. Measurable outcomes, not
-              endless experimentation. Long-term sustainability, not short-term
-              fixes. Our work protects customers, data, trust, and the business
-              results that depend on all three.
+            <p>
+              Most of the last two decades has been spent inside enterprise post-sales. Thirteen years at Akamai, the final five-plus as Senior Director leading Americas Professional Services. The team was responsible for the technical post-sales motion end-to-end: integrating customer applications and domains onto the Akamai platform, fulfilling attached services entitlements across performance and security products including zero-trust and SASE, coordinating break-fix with technical support, and — when it mattered — investing free services to keep a customer from churning. Customers ranged from a single-team startup to multi-divisional Fortune 100 strategic accounts. Projects ran from a week to several months. Earlier years included roles at Fidelity Investments and Infosys.
+            </p>
+            <p>
+              The thesis behind Aevum Solutions is that engineering-led founders increasingly want to protect revenue without proportional CS and PS headcount, and the path runs through agent-augmented operating models. The hard part is rarely the orchestration code. The hard part is knowing what the agent should do — what to escalate, what signal actually predicts churn, what the human still has to own, what the agent does better than a person already. That's the work.
+            </p>
+            <p>
+              Currently building Klyro, an AI-augmented job application platform on a Claude and Google Cloud stack, and studying toward Google Cloud certifications and the Claude Certified Architect program. Hands-on building keeps the advisory grounded.
+            </p>
+            <p>
+              A few things I'm strict about. Augmentation over automation — systems should make people more capable, not redundant. Outcomes before tooling — start with the result you need, work backward to the right design. Human judgment is non-negotiable — agents inform decisions, humans make them and own them. These aren't slogans on a wall; they're how I work.
+            </p>
+            <p>
+              Outside the practice, I write occasionally on operating leadership and talent — linked under Writing. To talk about an engagement, the fastest path is the 30-min Calendly on the Contact page, or contact@aevumsolutions.xyz.
             </p>
           </div>
         </div>
       </section>
 
-      {/* What Makes Us Different */}
-      <section className="section-padding bg-secondary">
-        <div className="container-custom">
-          <div className="mx-auto max-w-4xl">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-foreground text-center">
-              What Makes Us Different
-            </h2>
-            <div className="mt-12 grid gap-8 md:grid-cols-3">
-              {differentiators.map((item, index) => (
-                <div
-                  key={index}
-                  className="rounded-xl border border-border bg-card p-6"
-                >
-                  <h3 className="text-lg font-semibold text-card-foreground">
-                    {item.title}
-                  </h3>
-                  <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Principles That Guide Us */}
-      <section className="section-padding bg-background">
-        <div className="container-custom">
-          <div className="mx-auto max-w-4xl">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-foreground text-center">
-              Principles That Guide Us
-            </h2>
-            <div className="mt-12 grid gap-6 md:grid-cols-2">
-              {principles.map((principle, index) => (
-                <div
-                  key={index}
-                  className="rounded-xl border border-border bg-card p-6"
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent text-accent-foreground">
-                      <principle.icon className="h-5 w-5" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold text-card-foreground">
-                        {principle.title}
-                      </h3>
-                      <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                        {principle.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
       <CTASection
-        title="Ready to Work Together?"
-        description="Let's drive meaningful impact for your team and business."
+        title="Want to talk about your post-sales motion?"
+        description="A 30-minute call is the fastest way to find out if there's a fit."
+        buttonText="Book a 30-min intro"
       />
     </>
   );

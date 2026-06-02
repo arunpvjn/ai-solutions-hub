@@ -2,166 +2,183 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import SectionHeading from "@/components/shared/SectionHeading";
 import CTASection from "@/components/shared/CTASection";
-import {
-  ArrowRight,
-  Briefcase,
-  Users,
-  Bot,
-  Shield,
-} from "lucide-react";
+import { Target, GitBranch, Layers, Activity, Compass } from "lucide-react";
+
+const SUBSTACK_URL = "https://arunvijayan.substack.com/";
+
+const offerings = [
+  {
+    title: "Post-Sales AI Readiness Diagnostic",
+    tagline: "A decision-ready map of where AI agents will and won't move the needle in your post-sales function.",
+    bestFor: "Founders or post-sales leaders considering agent investment but not yet committed to a build path.",
+    scope:
+      "2–4 week fixed-scope engagement. Stakeholder interviews, workflow audit, opportunity sizing against the headcount alternative, build-vs-buy framing, and a sequenced roadmap.",
+    deliverables: [
+      "Current-state post-sales workflow map",
+      "AI augmentation opportunity matrix (PS implementation, CS health, renewals, escalations)",
+      "ROI model vs. continued headcount scaling",
+      "Sequenced 6–12 month roadmap",
+    ],
+    engagement: "2–4 weeks, fixed fee from $20K.",
+  },
+  {
+    title: "Post-Sales Operating Model Blueprint",
+    tagline: "The spec your engineering team builds against.",
+    bestFor:
+      "Teams that have decided to build agent-augmented post-sales and need the operating model designed before code gets written.",
+    scope:
+      "4–8 week engagement. Workflow design, signal logic, escalation paths, human-agent handoff protocols, and the success metrics agents should optimize for. Scope can be CS-focused, PS-focused, or full post-sales.",
+    deliverables: [
+      "Detailed workflow maps per persona (CSM, PS engineer, implementation lead, escalation manager)",
+      "Signal and health-score definitions",
+      "Escalation logic and review cadences",
+      "Agent specification document handed to your engineering team",
+    ],
+    engagement: "4–8 weeks, project fee from $35K.",
+  },
+  {
+    title: "Embedded Post-Sales Advisor",
+    tagline: "Fractional senior operator for growth-stage post-sales leadership.",
+    bestFor: "Founders or CROs scaling a CS/PS function and protecting ARR without proportional headcount.",
+    scope:
+      "1–3 days per week, embedded. Operating cadence design, leader coaching, hiring frameworks, escalation triage, and ongoing redesign of the human-agent operating model as the function grows. The goal is to ready the team for the arrival of an FTE leader, not to create ongoing dependency.",
+    deliverables: [
+      "Weekly leadership cadence and monthly review",
+      "Operating model iteration as the team scales",
+      "Hiring scorecards and onboarding frameworks",
+      "Ongoing advisory across CS, PS, and revenue protection",
+    ],
+    engagement: "3–6 month minimum. Retainer from $15K/month.",
+  },
+];
+
+const fitItems = [
+  { icon: Target, text: "You're an engineering-led founder (Series A–C, B2B SaaS) and post-sales is the next scaling bottleneck." },
+  { icon: GitBranch, text: "You're a VP of CS or PS at a growth-stage company under margin pressure to scale without proportional headcount." },
+  { icon: Layers, text: "Your technical post-sales motion (implementation, integration, escalation) is the long pole in time-to-value." },
+  { icon: Activity, text: "You want an operator's perspective on agent design, not a vendor's." },
+  { icon: Compass, text: "You'd rather pay for sharp thinking and a clear spec than a retainer that produces decks." },
+];
 
 const Index = () => {
-  const offerings = [
-    {
-      icon: Briefcase,
-      title: "Implementation Consulting",
-      description:
-        "Strategic guidance and hands-on delivery for enterprise AI, security, and customer success initiatives.",
-      href: "/solutions",
-    },
-    {
-      icon: Users,
-      title: "Leadership Coaching & Mentoring",
-      description:
-        "Executive coaching and mentorship for leaders navigating technology-driven transformation.",
-      href: "/solutions",
-    },
-    {
-      icon: Bot,
-      title: "Agent-Augmented Customer Success",
-      description:
-        "Design and deploy AI-powered systems that enhance customer outcomes while preserving human judgment.",
-      href: "/solutions",
-    },
-    {
-      icon: Shield,
-      title: "Agent-Augmented Security",
-      description:
-        "Integrate intelligent security workflows that protect your organization without slowing your teams.",
-      href: "/solutions",
-    },
-  ];
-
-  const processSteps = [
-    {
-      step: "01",
-      title: "Discovery",
-      description:
-        "We understand your challenges, goals, and current capabilities through deep conversations.",
-    },
-    {
-      step: "02",
-      title: "Strategy",
-      description:
-        "Together, we design a roadmap that aligns AI initiatives with your business objectives.",
-    },
-    {
-      step: "03",
-      title: "Build",
-      description:
-        "Our team develops and deploys solutions with your stakeholders involved at every stage.",
-    },
-    {
-      step: "04",
-      title: "Evolve",
-      description:
-        "We measure impact, iterate on learnings, and prepare your team for long-term success.",
-    },
-  ];
-
   return (
     <>
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-background">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-accent via-background to-background" />
-        <div className="container-custom relative py-20 lg:py-32">
+      {/* Hero */}
+      <section className="bg-background">
+        <div className="container-custom py-20 lg:py-32">
           <div className="mx-auto max-w-4xl text-center">
-            <span className="mb-6 inline-block rounded-full bg-accent px-4 py-1.5 text-sm font-medium text-accent-foreground animate-fade-in">
-              AI-First, Human-Centric
-            </span>
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl animate-fade-in-up">
-              Enterprise Advisory for the{" "}
-              <span className="text-gradient">AI Era</span>
+            <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
+              AI-augmented post-sales, designed by someone who's run it.
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl animate-fade-in-up">
-              We help organizations succeed through implementation consulting, leadership coaching, and agent-augmented systems for customer success and security.
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
+              Operating models, agent workflows, and escalation logic for B2B post-sales teams — implementation through renewal — without scaling headcount linearly.
             </p>
-            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row animate-fade-in-up">
+            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link to="/contact">
                 <Button variant="hero" size="lg">
-                  Schedule a Conversation
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  Book a 30-min intro
                 </Button>
               </Link>
-              <Link to="/solutions">
-                <Button variant="heroOutline" size="lg">
-                  Explore Solutions
-                </Button>
-              </Link>
+              <a
+                href={SUBSTACK_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-base font-medium text-primary underline underline-offset-4 hover:text-primary/80"
+              >
+                Read recent writing →
+              </a>
             </div>
+            <p className="mx-auto mt-8 max-w-2xl text-sm italic text-muted-foreground">
+              Independent advisory based in Austin, TX. Working with engineering-led B2B SaaS founders and growth-stage post-sales leaders.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Core Offerings */}
-      <section className="section-padding bg-background">
-        <div className="container-custom">
-          <SectionHeading
-            badge="What We Do"
-            title="Focused Expertise for Enterprise Success"
-            description="Four core offerings designed to deliver measurable outcomes for your organization."
-          />
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {offerings.map((offering, index) => (
-              <Link key={index} to={offering.href} className="group">
-                <div className="h-full rounded-xl border border-border bg-card p-6 transition-all duration-300 card-shadow hover:card-shadow-hover">
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent text-accent-foreground">
-                    <offering.icon className="h-6 w-6" />
-                  </div>
-                  <h3 className="mb-3 text-lg font-semibold text-card-foreground group-hover:text-primary transition-colors">
-                    {offering.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground">{offering.description}</p>
-                  <div className="mt-4 flex items-center text-sm font-medium text-primary opacity-0 transition-opacity group-hover:opacity-100">
-                    Learn more
-                    <ArrowRight className="ml-1 h-4 w-4" />
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* How We Work */}
+      {/* The wedge */}
       <section className="section-padding bg-secondary">
         <div className="container-custom">
           <SectionHeading
-            badge="Our Process"
-            title="How We Work"
-            description="A collaborative approach that ensures your initiatives succeed."
+            badge="THE WEDGE"
+            title="Engineering teams can build the agents. Knowing what the agents should do is the harder problem."
           />
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {processSteps.map((step, index) => (
-              <div
-                key={index}
-                className="relative rounded-xl bg-card p-6 card-shadow"
-              >
-                <span className="mb-4 inline-block text-4xl font-bold text-primary/20">
-                  {step.step}
-                </span>
-                <h3 className="mb-2 text-xl font-semibold text-card-foreground">
-                  {step.title}
-                </h3>
-                <p className="text-muted-foreground">{step.description}</p>
+          <div className="mx-auto max-w-[680px] space-y-6 text-lg leading-relaxed text-muted-foreground">
+            <p>
+              Most AI-for-CS and AI-for-PS efforts get the orchestration right and the operating model wrong. Workflows reflect how the team works today, not how it should work when half the toil is automated. Escalation logic gets built without the lived knowledge of which escalations actually save a renewal. Signal definitions get borrowed from a vendor template instead of designed against the specific business.
+            </p>
+            <p>
+              What's usually missing isn't engineering — it's an operator who's run technical post-sales at scale and can tell you, with conviction, where agents create real leverage, where they fail, and how to structure the human-agent division of labor so revenue is protected, not theatrically defended.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Three offerings */}
+      <section className="section-padding bg-background">
+        <div className="container-custom">
+          <SectionHeading
+            badge="WHAT WE DO"
+            title="Three ways to work together"
+            description="From a fixed-scope diagnostic to an embedded advisory engagement."
+          />
+          <div className="grid gap-8 lg:grid-cols-3">
+            {offerings.map((o) => (
+              <div key={o.title} className="flex flex-col rounded-xl border border-border bg-card p-9">
+                <h3 className="text-xl font-semibold text-card-foreground">{o.title}</h3>
+                <p className="mt-3 text-sm italic text-muted-foreground">{o.tagline}</p>
+                <p className="mt-5 text-sm text-muted-foreground">
+                  <span className="font-medium text-card-foreground">Best for: </span>
+                  {o.bestFor}
+                </p>
+                <p className="mt-4 text-sm text-muted-foreground">{o.scope}</p>
+                <div className="mt-5">
+                  <p className="text-sm font-medium text-card-foreground">Deliverables:</p>
+                  <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-muted-foreground">
+                    {o.deliverables.map((d) => (
+                      <li key={d}>{d}</li>
+                    ))}
+                  </ul>
+                </div>
+                <p className="mt-6 text-sm font-semibold text-foreground">{o.engagement}</p>
+                <div className="mt-6">
+                  <Link
+                    to="/contact"
+                    className="text-sm font-medium text-primary underline underline-offset-4 hover:text-primary/80"
+                  >
+                    Discuss this engagement →
+                  </Link>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <CTASection />
+      {/* Fit */}
+      <section className="section-padding bg-secondary">
+        <div className="container-custom">
+          <SectionHeading badge="FIT" title="Best fit when…" />
+          <div className="mx-auto max-w-4xl">
+            <ul className="grid gap-6 md:grid-cols-2">
+              {fitItems.map((item, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <item.icon className="mt-1 h-5 w-5 shrink-0 text-primary" />
+                  <span className="text-base text-foreground">{item.text}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="mx-auto mt-10 max-w-3xl text-sm italic text-muted-foreground">
+              Less of a fit: organizations looking for a generalist AI consultant, agent implementation services, or off-the-shelf CS playbooks. The work here is on the operating model and the spec; your team or your platform partner builds.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <CTASection
+        title="A 30-minute call is the cheapest way to find out if this fits."
+        description="Or email contact@aevumsolutions.xyz."
+        buttonText="Book a 30-min intro"
+      />
     </>
   );
 };
