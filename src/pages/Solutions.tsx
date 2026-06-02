@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import CTASection from "@/components/shared/CTASection";
@@ -51,6 +52,14 @@ const offerings = [
 const Solutions = () => {
   return (
     <>
+      <Helmet>
+        <title>Advisory Services — Aevum Solutions</title>
+        <meta name="description" content="Three engagement models: Post-Sales AI Readiness Diagnostic, Operating Model Blueprint, and Embedded Post-Sales Advisor." />
+        <link rel="canonical" href="https://www.aevumsolutions.xyz/solutions" />
+        <meta property="og:title" content="Advisory Services — Aevum Solutions" />
+        <meta property="og:description" content="Three engagement models: Post-Sales AI Readiness Diagnostic, Operating Model Blueprint, and Embedded Post-Sales Advisor." />
+        <meta property="og:url" content="https://www.aevumsolutions.xyz/solutions" />
+      </Helmet>
       {/* Hero */}
       <section className="bg-background">
         <div className="container-custom py-20 lg:py-28">
