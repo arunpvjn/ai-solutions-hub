@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import SectionHeading from "@/components/shared/SectionHeading";
@@ -63,6 +64,14 @@ const fitItems = [
 const Index = () => {
   return (
     <>
+      <Helmet>
+        <title>Aevum Solutions — AI-augmented post-sales operating models</title>
+        <meta name="description" content="Independent advisory for B2B post-sales leaders. AI-augmented operating models, agent workflows, and escalation logic, implementation through renewal. Designed by an operator who's run them at enterprise scale." />
+        <link rel="canonical" href="https://www.aevumsolutions.xyz/" />
+        <meta property="og:title" content="Aevum Solutions — AI-augmented post-sales operating models" />
+        <meta property="og:description" content="Independent advisory for B2B post-sales leaders. AI-augmented operating models, agent workflows, and escalation logic, implementation through renewal. Designed by an operator who's run them at enterprise scale." />
+        <meta property="og:url" content="https://www.aevumsolutions.xyz/" />
+      </Helmet>
       {/* Hero */}
       <section className="bg-background">
         <div className="container-custom py-20 lg:py-32">

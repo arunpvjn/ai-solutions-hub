@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, Calendar } from "lucide-react";
 
@@ -36,6 +37,14 @@ const Contact = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Contact — Aevum Solutions</title>
+        <meta name="description" content="Book a 30-minute intro call or reach out via email or LinkedIn to discuss your post-sales operating model." />
+        <link rel="canonical" href="https://www.aevumsolutions.xyz/contact" />
+        <meta property="og:title" content="Contact — Aevum Solutions" />
+        <meta property="og:description" content="Book a 30-minute intro call or reach out via email or LinkedIn to discuss your post-sales operating model." />
+        <meta property="og:url" content="https://www.aevumsolutions.xyz/contact" />
+      </Helmet>
       {/* Hero */}
       <section className="bg-background">
         <div className="container-custom py-20 lg:py-28">
