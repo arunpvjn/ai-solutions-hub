@@ -1,17 +1,8 @@
-import { Helmet } from "react-helmet-async";
 import CTASection from "@/components/shared/CTASection";
 
 const WhoWeAre = () => {
   return (
     <>
-      <Helmet>
-        <title>Who We Are — Aevum Solutions</title>
-        <meta name="description" content="Background, operating philosophy, and how Aevum Solutions works with B2B post-sales leaders on AI-augmented operating models." />
-        <link rel="canonical" href="https://www.aevumsolutions.xyz/who-we-are" />
-        <meta property="og:title" content="Who We Are — Aevum Solutions" />
-        <meta property="og:description" content="Background, operating philosophy, and how Aevum Solutions works with B2B post-sales leaders on AI-augmented operating models." />
-        <meta property="og:url" content="https://www.aevumsolutions.xyz/who-we-are" />
-      </Helmet>
       {/* Hero */}
       <section className="bg-background">
         <div className="container-custom py-20 lg:py-28">
@@ -51,6 +42,11 @@ const WhoWeAre = () => {
               hard part is rarely the orchestration code. The hard part is knowing what the agent should do — what to
               escalate, what signal actually predicts churn, what the human still has to own, what the agent does better
               than a person already. That's the work.
+            </p>
+            <p>
+              We focus on augmentation, not replacement. Measurable outcomes, not endless experimentation. Long-term
+              sustainability, not short-term fixes. Our work protects customers, data, trust, and the business results
+              that depend on all three.
             </p>
             <p>
               Outside the practice, I write occasionally on operating leadership and talent — linked under Writing. To
