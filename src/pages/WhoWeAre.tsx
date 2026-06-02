@@ -22,22 +22,31 @@ const WhoWeAre = () => {
         <div className="container-custom">
           <div className="mx-auto max-w-[680px] space-y-6 text-lg leading-relaxed text-muted-foreground">
             <p>
-              Aevum Solutions is an independent advisory practice led by Arun Vijayan and based in Austin, Texas. The focus is narrow on purpose: AI-augmented post-sales operating models for B2B technology companies — implementation through renewal.
+              Aevum Solutions is an independent advisory practice led by Arun Vijayan and based in Austin, Texas. The
+              focus is narrow on purpose: AI-augmented post-sales operating models for B2B technology companies —
+              implementation through renewal.
             </p>
             <p>
-              Most of the last two decades has been spent inside enterprise post-sales. Thirteen years at Akamai, the final five-plus as Senior Director leading Americas Professional Services. The team was responsible for the technical post-sales motion end-to-end: integrating customer applications and domains onto the Akamai platform, fulfilling attached services entitlements across performance and security products including zero-trust and SASE, coordinating break-fix with technical support, and — when it mattered — investing free services to keep a customer from churning. Customers ranged from a single-team startup to multi-divisional Fortune 100 strategic accounts. Projects ran from a week to several months. Earlier years included roles at Fidelity Investments and Infosys.
+              Most of the last two decades has been spent inside enterprise post-sales. Thirteen years at Akamai, the
+              final five-plus as Senior Director leading Americas Professional Services. The team was responsible for
+              the technical post-sales motion end-to-end: integrating customer applications and domains onto the Akamai
+              platform, fulfilling attached services entitlements across performance and security products including
+              zero-trust and SASE, coordinating break-fix with technical support, and — when it mattered — investing
+              free services to keep a customer from churning. Customers ranged from a single-team startup to
+              multi-divisional Fortune 100 strategic accounts. Projects ran from a week to several months. Earlier years
+              included roles at Fidelity Investments and Infosys.
             </p>
             <p>
-              The thesis behind Aevum Solutions is that engineering-led founders increasingly want to protect revenue without proportional CS and PS headcount, and the path runs through agent-augmented operating models. The hard part is rarely the orchestration code. The hard part is knowing what the agent should do — what to escalate, what signal actually predicts churn, what the human still has to own, what the agent does better than a person already. That's the work.
+              The thesis behind Aevum Solutions is that engineering-led founders increasingly want to protect revenue
+              without proportional CS and PS headcount, and the path runs through agent-augmented operating models. The
+              hard part is rarely the orchestration code. The hard part is knowing what the agent should do — what to
+              escalate, what signal actually predicts churn, what the human still has to own, what the agent does better
+              than a person already. That's the work.
             </p>
             <p>
-              Currently building Klyro, an AI-augmented job application platform on a Claude and Google Cloud stack, and studying toward Google Cloud certifications and the Claude Certified Architect program. Hands-on building keeps the advisory grounded.
-            </p>
-            <p>
-              A few things I'm strict about. Augmentation over automation — systems should make people more capable, not redundant. Outcomes before tooling — start with the result you need, work backward to the right design. Human judgment is non-negotiable — agents inform decisions, humans make them and own them. These aren't slogans on a wall; they're how I work.
-            </p>
-            <p>
-              Outside the practice, I write occasionally on operating leadership and talent — linked under Writing. To talk about an engagement, the fastest path is the 30-min Calendly on the Contact page, or contact@aevumsolutions.xyz.
+              Outside the practice, I write occasionally on operating leadership and talent — linked under Writing. To
+              talk about an engagement, the fastest path is the 30-min Calendly on the Contact page, or
+              contact@aevumsolutions.xyz.
             </p>
           </div>
         </div>
