@@ -16,7 +16,7 @@ const offerings = [
       "ROI model vs. continued headcount scaling",
       "Sequenced 6–12 month roadmap",
     ],
-    engagement: "2–4 weeks, fixed fee from $20K.",
+    engagement: "Fixed-scope engagement, 2–4 weeks.",
   },
   {
     title: "Post-Sales Operating Model Blueprint",
@@ -31,7 +31,7 @@ const offerings = [
       "Escalation logic and review cadences",
       "Agent specification document handed to your engineering team",
     ],
-    engagement: "4–8 weeks, project fee from $35K.",
+    engagement: "Project engagement, 4–8 weeks.",
   },
   {
     title: "Embedded Post-Sales Advisor",
@@ -45,7 +45,7 @@ const offerings = [
       "Hiring scorecards and onboarding frameworks",
       "Ongoing advisory across CS, PS, and revenue protection",
     ],
-    engagement: "3–6 month minimum. Retainer from $15K/month.",
+    engagement: "Fractional retainer. 3–6 month minimum, 1–3 days per week.",
   },
 ];
 
@@ -54,10 +54,16 @@ const Solutions = () => {
     <>
       <Helmet>
         <title>Advisory Services — Aevum Solutions</title>
-        <meta name="description" content="Three engagement models: Post-Sales AI Readiness Diagnostic, Operating Model Blueprint, and Embedded Post-Sales Advisor." />
+        <meta
+          name="description"
+          content="Three engagement models: Post-Sales AI Readiness Diagnostic, Operating Model Blueprint, and Embedded Post-Sales Advisor."
+        />
         <link rel="canonical" href="https://www.aevumsolutions.xyz/solutions" />
         <meta property="og:title" content="Advisory Services — Aevum Solutions" />
-        <meta property="og:description" content="Three engagement models: Post-Sales AI Readiness Diagnostic, Operating Model Blueprint, and Embedded Post-Sales Advisor." />
+        <meta
+          property="og:description"
+          content="Three engagement models: Post-Sales AI Readiness Diagnostic, Operating Model Blueprint, and Embedded Post-Sales Advisor."
+        />
         <meta property="og:url" content="https://www.aevumsolutions.xyz/solutions" />
       </Helmet>
       {/* Hero */}
