@@ -5,7 +5,7 @@ const WhoWeAre = () => {
     <>
       {/* Hero */}
       <section className="bg-background">
-        <div className="container-custom py-20 lg:py-28">
+        <div className="container-custom pt-20 pb-10 lg:pt-28 lg:pb-14">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
               About Aevum Solutions
