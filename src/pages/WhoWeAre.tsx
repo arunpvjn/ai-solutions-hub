@@ -30,11 +30,11 @@ const WhoWeAre = () => {
               Most of the last two decades has been spent inside enterprise post-sales. Thirteen years at Akamai, the
               final five-plus as Senior Director leading Americas Professional Services. The team was responsible for
               the technical post-sales motion end-to-end: integrating customer applications and domains onto the Akamai
-              platform, fulfilling attached services entitlements across performance and security products including
-              zero-trust and SASE, coordinating break-fix with technical support, and — when it mattered — investing
-              free services to keep a customer from churning. Customers ranged from a single-team startup to
-              multi-divisional Fortune 100 strategic accounts. Projects ran from a week to several months. Earlier years
-              included roles at Fidelity Investments and Infosys.
+              platform, fulfilling attached services entitlements across CDN performance and security products,
+              coordinating break-fix with technical support, and — when it mattered — investing free services to keep a
+              customer from churning. Customers ranged from a single-team startup to multi-divisional Fortune 100
+              strategic accounts. Projects ran from a week to several months. Earlier years included roles at Fidelity
+              Investments and Infosys.
             </p>
             <p>
               The thesis behind Aevum Solutions is that engineering-led founders increasingly want to protect revenue
