@@ -20,7 +20,7 @@ const offerings = [
       "ROI model vs. continued headcount scaling",
       "Sequenced 6–12 month roadmap",
     ],
-    engagement: "2–4 weeks, fixed fee from $20K.",
+    engagement: "Fixed-scope engagement, 2–4 weeks.",
   },
   {
     title: "Post-Sales Operating Model Blueprint",
@@ -35,7 +35,7 @@ const offerings = [
       "Escalation logic and review cadences",
       "Agent specification document handed to your engineering team",
     ],
-    engagement: "4–8 weeks, project fee from $35K.",
+    engagement: "Project engagement, 4–8 weeks.",
   },
   {
     title: "Embedded Post-Sales Advisor",
@@ -49,14 +49,23 @@ const offerings = [
       "Hiring scorecards and onboarding frameworks",
       "Ongoing advisory across CS, PS, and revenue protection",
     ],
-    engagement: "3–6 month minimum. Retainer from $15K/month.",
+    engagement: "3 month minimum, 1–3 days per week.",
   },
 ];
 
 const fitItems = [
-  { icon: Target, text: "You're an engineering-led founder (Series A–C, B2B SaaS) and post-sales is the next scaling bottleneck." },
-  { icon: GitBranch, text: "You're a VP of CS or PS at a growth-stage company under margin pressure to scale without proportional headcount." },
-  { icon: Layers, text: "Your technical post-sales motion (implementation, integration, escalation) is the long pole in time-to-value." },
+  {
+    icon: Target,
+    text: "You're an engineering-led founder (Series A–C, B2B SaaS) and post-sales is the next scaling bottleneck.",
+  },
+  {
+    icon: GitBranch,
+    text: "You're a VP of CS or PS at a growth-stage company under margin pressure to scale without proportional headcount.",
+  },
+  {
+    icon: Layers,
+    text: "Your technical post-sales motion (implementation, integration, escalation) is the long pole in time-to-value.",
+  },
   { icon: Activity, text: "You want an operator's perspective on agent design, not a vendor's." },
   { icon: Compass, text: "You'd rather pay for sharp thinking and a clear spec than a retainer that produces decks." },
 ];
@@ -66,10 +75,16 @@ const Index = () => {
     <>
       <Helmet>
         <title>Aevum Solutions — AI-augmented post-sales operating models</title>
-        <meta name="description" content="Independent advisory for B2B post-sales leaders. AI-augmented operating models, agent workflows, and escalation logic, implementation through renewal. Designed by an operator who's run them at enterprise scale." />
+        <meta
+          name="description"
+          content="Independent advisory for B2B post-sales leaders. AI-augmented operating models, agent workflows, and escalation logic, implementation through renewal. Designed by an operator who's run them at enterprise scale."
+        />
         <link rel="canonical" href="https://www.aevumsolutions.xyz/" />
         <meta property="og:title" content="Aevum Solutions — AI-augmented post-sales operating models" />
-        <meta property="og:description" content="Independent advisory for B2B post-sales leaders. AI-augmented operating models, agent workflows, and escalation logic, implementation through renewal. Designed by an operator who's run them at enterprise scale." />
+        <meta
+          property="og:description"
+          content="Independent advisory for B2B post-sales leaders. AI-augmented operating models, agent workflows, and escalation logic, implementation through renewal. Designed by an operator who's run them at enterprise scale."
+        />
         <meta property="og:url" content="https://www.aevumsolutions.xyz/" />
       </Helmet>
       {/* Hero */}
@@ -80,7 +95,8 @@ const Index = () => {
               AI-augmented post-sales, designed by someone who's run it.
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
-              Operating models, agent workflows, and escalation logic for B2B post-sales teams — implementation through renewal — without scaling headcount linearly.
+              Operating models, agent workflows, and escalation logic for B2B post-sales teams — implementation through
+              renewal — without scaling headcount linearly.
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link to="/contact">
@@ -98,7 +114,8 @@ const Index = () => {
               </a>
             </div>
             <p className="mx-auto mt-8 max-w-2xl text-sm italic text-muted-foreground">
-              Independent advisory based in Austin, TX. Working with engineering-led B2B SaaS founders and growth-stage post-sales leaders.
+              Independent advisory based in Austin, TX. Working with engineering-led B2B SaaS founders and growth-stage
+              post-sales leaders.
             </p>
           </div>
         </div>
@@ -113,10 +130,15 @@ const Index = () => {
           />
           <div className="mx-auto max-w-[680px] space-y-6 text-lg leading-relaxed text-muted-foreground">
             <p>
-              Most AI-for-CS and AI-for-PS efforts get the orchestration right and the operating model wrong. Workflows reflect how the team works today, not how it should work when half the toil is automated. Escalation logic gets built without the lived knowledge of which escalations actually save a renewal. Signal definitions get borrowed from a vendor template instead of designed against the specific business.
+              Most AI-for-CS and AI-for-PS efforts get the orchestration right and the operating model wrong. Workflows
+              reflect how the team works today, not how it should work when half the toil is automated. Escalation logic
+              gets built without the lived knowledge of which escalations actually save a renewal. Signal definitions
+              get borrowed from a vendor template instead of designed against the specific business.
             </p>
             <p>
-              What's usually missing isn't engineering — it's an operator who's run technical post-sales at scale and can tell you, with conviction, where agents create real leverage, where they fail, and how to structure the human-agent division of labor so revenue is protected, not theatrically defended.
+              What's usually missing isn't engineering — it's an operator who's run technical post-sales at scale and
+              can tell you, with conviction, where agents create real leverage, where they fail, and how to structure
+              the human-agent division of labor so revenue is protected, not theatrically defended.
             </p>
           </div>
         </div>
@@ -177,7 +199,9 @@ const Index = () => {
               ))}
             </ul>
             <p className="mx-auto mt-10 max-w-3xl text-sm italic text-muted-foreground">
-              Less of a fit: organizations looking for a generalist AI consultant, agent implementation services, or off-the-shelf CS playbooks. The work here is on the operating model and the spec; your team or your platform partner builds.
+              Less of a fit: organizations looking for a generalist AI consultant, agent implementation services, or
+              off-the-shelf CS playbooks. The work here is on the operating model and the spec; your team or your
+              platform partner builds.
             </p>
           </div>
         </div>
